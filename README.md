@@ -146,6 +146,21 @@ To configure joypads, use the built-in menu or the `retroarch-joyconfig` command
 
 Instructions for compiling and installing RetroArch can be found in the [Libretro/RetroArch Documentation Center](https://docs.libretro.com/).
 
+## Compiling and installing on Ubuntu
+git clone https://github.com/libretro/RetroArch.git retroarch
+cd retroarch
+git pull
+./configure
+make clean
+and then for stable :
+make -j4
+or for debug :
+make DEBUG=1 GL_DEBUG=1 -j4
+
+You can then start RetroArch by running:
+ ./retroarch
+
+
 ## CRT 15Khz Resolution Switching
 
 CRT SwitchRes will turn on, on the fly. However, you will need to restart RetroArch to disable it. With CRT SwitchRes enable RetroArch will start in 2560 x 480 @ 60.  
