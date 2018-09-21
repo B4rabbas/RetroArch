@@ -148,16 +148,26 @@ Instructions for compiling and installing RetroArch can be found in the [Libretr
 
 ## Compiling and installing on Ubuntu
 git clone https://github.com/libretro/RetroArch.git retroarch
+
 cd retroarch
+
 git pull
+
 ./configure
+
 make clean
+
 and then for stable :
+
 make -j4
+
 or for debug :
+
 make DEBUG=1 GL_DEBUG=1 -j4
 
+
 You can then start RetroArch by running:
+
  ./retroarch
 
 
