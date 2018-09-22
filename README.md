@@ -1,13 +1,21 @@
 [![Build Status](https://travis-ci.org/libretro/RetroArch.svg?branch=master)](https://travis-ci.org/libretro/RetroArch)
 [![Coverity Scan Build Status](https://scan.coverity.com/projects/8936/badge.svg)](https://scan.coverity.com/projects/retroarch)
 
-Install
+Pour installer
 
-sudo add-apt-repository -y ppa:libretro/stable ; sudo apt update ; sudo apt install -y retroarch
+sudo add-apt-repository -y ppa:libretro/stable ; sudo apt update ; sudo apt install -y retroarch libretro-*
 
-or for testing :
+sudo add-apt-repository -y ppa:libretro/testing ; sudo apt update ; sudo apt install -y retroarch libretro-*
 
-sudo add-apt-repository -y ppa:libretro/testing ;  sudo apt update ; sudo apt install -y retroarch
+
+Pour desinstaller :
+
+
+sudo add-apt-repository --remove -y ppa:libretro/stable ; sudo apt update ; sudo apt install -y retroarch libretro-* ; sudo apt purge -y retroarch
+
+sudo add-apt-repository --remove -y ppa:libretro/testing ; sudo apt update ; sudo apt install -y retroarch libretro-* ; sudo apt purge -y retroarch
+
+
 
 
 
